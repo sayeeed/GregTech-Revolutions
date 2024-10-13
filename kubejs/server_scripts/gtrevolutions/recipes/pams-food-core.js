@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
         .EUt(2);
     // remove all forge/flour for just Pam flour
     event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:flour" }, "#forge:flour", "pamhc2foodcore:flouritem");
-    event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:egg" }, "#forge:egg", "minecraft:egg");
+    //event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:egg" }, "#forge:egg", "minecraft:egg");
     // Batter
     event.remove({ output: "pamhc2foodcore:batteritem" });
     event.shapeless("pamhc2foodcore:batteritem", [
