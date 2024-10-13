@@ -161,4 +161,90 @@ ServerEvents.recipes((event) => {
     // remove all forge/flour for just Pam flour
     event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:flour" }, "#forge:flour", "pamhc2foodcore:flouritem");
     event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:egg" }, "#forge:egg", "minecraft:egg");
+    // Batter
+    event.remove({ output: "pamhc2foodcore:batteritem" });
+    event.shapeless("pamhc2foodcore:batteritem", [
+        "pamhc2foodcore:mixingbowlitem",
+        "pamhc2foodcore:flouritem",
+        "#forge:milk",
+        "minecraft:egg"
+    ]);
+    // Chocolate Cake
+    event.remove({ output: "pamhc2foodcore:chocolatecakeitem" });
+    event.shapeless("pamhc2foodcore:chocolatecakeitem", [
+        "pamhc2foodcore:bakewareitem",
+        "pamhc2foodcore:doughitem",
+        "pamhc2foodcore:cocoapowderitem",
+        "pamhc2foodcore:batteritem"
+    ]);
+    // Muffins
+    event.remove({ output: "pamhc2foodcore:chocolatemuffinitem" });
+    event.remove({ output: "pamhc2foodcore:pumpkinmuffinitem" });
+    event.remove({ output: "pamhc2foodcore:carrotmuffinitem" });
+    event.remove({ output: "pamhc2foodcore:caramelmuffinitem" });
+    event.shapeless(`2x pamhc2foodcore:chocolatemuffinitem`, [
+        "pamhc2foodcore:bakewareitem",
+        "pamhc2foodcore:cocoapowderitem",
+        "pamhc2foodcore:batteritem"
+    ]);
+    event.shapeless(`2x pamhc2foodcore:pumpkinmuffinitem`, [
+        "pamhc2foodcore:bakewareitem",
+        "minecraft:pumpkin",
+        "pamhc2foodcore:batteritem"
+    ]);
+    event.shapeless(`2x pamhc2foodcore:carrotmuffinitem`, [
+        "pamhc2foodcore:bakewareitem",
+        "minecraft:carrot",
+        "pamhc2foodcore:batteritem"
+    ]);
+    event.shapeless(`2x pamhc2foodcore:caramelmuffinitem`, [
+        "pamhc2foodcore:bakewareitem",
+        "pamhc2foodcore:caramelitem",
+        "pamhc2foodcore:batteritem"
+    ]);
+    // Cooking Oil
+    event.remove({ output: "pamhc2foodcore:cookingoilitem" });
+    event.shapeless("pamhc2foodcore:cookingoilitem", [
+        "pamhc2foodcore:rolleritem",
+        "minecraft:egg"
+    ]);
+    event.shapeless("pamhc2foodcore:cookingoilitem", [
+        "pamhc2foodcore:rolleritem",
+        "pamhc2crops:canolaitem"
+    ]);
+    event.shapeless("pamhc2foodcore:cookingoilitem", [
+        "pamhc2foodcore:rolleritem",
+        "#forge:nuts"
+    ]);
+    // Replace all Pam's salt for GregTech salt
+    event.replaceInput({ mod: "pamhc2foodcore", input: "pamhc2foodcore:saltitem" }, "pamhc2foodcore:saltitem", "gtceu:salt_dust");
+    // Soft Pretzel
+    event.remove({ output: "pamhc2foodcore:softpretzelitem" });
+    event.shapeless("pamhc2foodcore:softpretzelitem", [
+        "pamhc2foodcore:bakewareitem",
+        "pamhc2foodcore:doughitem",
+        "gtceu:salt_dust",
+        "pamhc2foodcore:butteritem"
+    ]);
+    // Butter
+    event.remove({ output: "pamhc2foodcore:butteritem" });
+    event.shapeless("pamhc2foodcore:butteritem", [
+        "pamhc2foodcore:mixingbowlitem",
+        "pamhc2foodcore:creamitem"
+    ]);
+    // Chocolate Bar
+    event.remove({ output: "pamhc2foodcore:chocolatebaritem" });
+    event.shapeless("pamhc2foodcore:chocolatebaritem", [
+        "pamhc2foodcore:saucepanitem",
+        "pamhc2foodcore:cocoapowderitem",
+        "pamhc2foodcore:butteritem",
+        "#forge:milk"
+    ]);
+    event.remove({ output: "pamhc2foodcore:marshmellowsitem" });
+    event.shapeless("pamhc2foodcore:marshmellowsitem", [
+        "pamhc2foodcore:saucepanitem",
+        "minecraft:sugar",
+        "minecraft:egg",
+        "#forge:water"
+    ]);
 });
