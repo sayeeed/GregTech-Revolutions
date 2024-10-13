@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	default_quest_size: 2.0d
+	filename: "tier_1__lv_age"
+	group: ""
+	icon: "gtceu:lv_assembler"
+	id: "1F5CBAE6428E0FFA"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["153815FE5563ECCE"]
+		id: "2BAD10443147695C"
+		tasks: [{
+			id: "729B4613408596F3"
+			item: "gtceu:lv_steam_turbine"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Tier 1 - LV Age"
+}

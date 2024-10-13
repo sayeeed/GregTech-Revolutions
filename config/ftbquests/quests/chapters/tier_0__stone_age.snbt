@@ -1,0 +1,1122 @@
+{
+	default_hide_dependency_lines: false
+	default_min_width: 400
+	default_quest_shape: "square"
+	default_quest_size: 2.0d
+	filename: "tier_0__stone_age"
+	group: ""
+	icon: "minecraft:stone"
+	id: "106CDF0A6AD7F710"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to GregTech: Revolutions, a GTM based modpack about building factories and solving logistical problems with a GTNH inspired difficulty setting."
+				""
+				"For starters, I recommend you complete this quest and immediately look for some wood, gravel, food, and wool to help you survive your first night. The world around you does not like you, but it will be your job to control it before long."
+				""
+				"After you have gotten situated, it is time to settle into your new world (or life). The beginning few quests will go over some of the main mods and mechanics in the pack."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "32026EE705DD0326"
+			shape: "gear"
+			size: 2.75d
+			subtitle: "Your First Night"
+			tasks: [{
+				id: "165917028D9C6F07"
+				title: "Welcome to GT: Revolutions"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32026EE705DD0326"]
+			description: [
+				"&l&6Technology&r&r - GT:R is based on &bGregTech: Modern&r and with supporting space mods and &5AE2&r."
+				""
+				"&l&2World Generation&r&r - GT:R uses &aLithosphere&r for terrain generation and &2Regions Unexplored&r for biomes. Note, I have done my best to incorporate the new items and blocks in RE to be compatible in crafting. &bSerene Seasons&r adds changing seasons and will affect crop growth negatively in different situations (building farms underground or in a greenhouse with glass will help"
+				"mitigate this problem)."
+				""
+				"&l&cFood&r&r - &4Pam's Harvest Craft 2&r is included to expand your food selection, while &6Spice of Life Onion&r and &2Diet&r will require you to vary your food nutrients. &8Tough as Nails&r adds a temperature mechanic to be mindful of as well as adding the need to drink water. Oh, and finite water is a thing."
+				""
+				"&l&dStorage&r&r - Obviously AE2 is included, but you also have access to the &9Sophisticated suite&r which adds backpacks, barrels, chests, and drawer storage options along with their gregified perks."
+				""
+				"&l&9Mobs&r&r - &6Special Mobs&r will spawn a variety of challenging mobs to fight (or run away from) as well as &4Infernal Mobs&r further augmenting mobs."
+				""
+				"&l&7Building&r&r - We've included a ton of building related mods, such as Rechiseled, Chipped, FramedBlocks, Architect's Palette, and Xtones Reworked for all your block needs. Building Gadgets and Construction Wands are also included to help build."
+				""
+				"&l&2Quality of Life&r&r - There's a plethora of QOL mods added such as Tool Belt, Elevator, Travel Anchors, Hang Glider, Comforts, and more."
+				""
+				"You might have noticed &3Create&r is also included. This pack doesn't focus on Create whatsoever, the main purpose of it is for the use of trains as a transportation option and everything else has been stripped out. The trains portion of Create has also been heavily gregified and doesn't rely on any of the resources Create typically uses."
+			]
+			id: "596834B0B4B272D8"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "442AC7020C8407F9"
+				title: "Mods Overview"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32026EE705DD0326"]
+			description: [
+				"GT:R is currently in &4&o&lALPHA&r&r&r but will be playable initially up to HV/EV. Below are some features we plan on adding soon to develop the core gameplay of the pack."
+				""
+				"- Customized space age progression at the start of EV."
+				"- Train customization for transporting resources. Resource management is one of the main logistical puzzles in this pack."
+				"- New Multiblocks and Machines for a customized GT progression."
+			]
+			id: "400B3AD330AE2B05"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "465A731E66EC24EA"
+				title: "Development"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["32026EE705DD0326"]
+			description: [
+				"First things first, hopefully you have already begun searching for food and/or a shelter. Villages can be a huge boost to the start of your journey. Also note the biome you spawned in because if it is a cold or hot biome, you will quickly run into issues."
+				""
+				"While you get your bearings, be sure to look for some gravel and get some wood. We can use them to make some starting flint tools. To get flint, you can craft 3 gravel to 1 flint."
+			]
+			icon: "minecraft:gravel"
+			id: "3FCAF731135884B5"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					count: 9L
+					id: "677A3261BD50AAC3"
+					item: { Count: 8, id: "minecraft:gravel" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6EB15447EFBA4B2A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Logs"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "535BD8109FA10F35"
+					item: { Count: 3, id: "minecraft:flint" }
+					type: "item"
+				}
+			]
+			title: "This Looks Familiar"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FCAF731135884B5"]
+			description: ["Using flint and logs, you can make yourself a Crafting Table."]
+			id: "2132DB7BF2DA2877"
+			tasks: [{
+				id: "0C538FBE562920CD"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Crafting Time"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2132DB7BF2DA2877"]
+			description: [
+				"After collecting some flint and wood and finding some shelter, you can start making flint tools."
+				""
+				"Vanilla tools are uncraftable, but you might find some out in the world and you can still use them. GregTech tools do provide some unique benefits, such as the Axe's ability to chop entire trees down with one swing."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:flint_pickaxe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 63
+						ToolSpeed: 5.5f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "1CA9E2C8ECA8A9DD"
+			tasks: [
+				{
+					id: "2A711784DD83B52A"
+					item: {
+						Count: 1
+						id: "gtceu:flint_pickaxe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49840554AF60947F"
+					item: {
+						Count: 1
+						id: "gtceu:flint_shovel"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44F973649497D590"
+					item: {
+						Count: 1
+						id: "gtceu:flint_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 3.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "658093F506D8242B"
+					item: {
+						Count: 1
+						id: "gtceu:flint_sword"
+						tag: {
+							DisallowContainerItem: 0b
+							Enchantments: [{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}]
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 4.0f
+								AttackSpeed: -2.4f
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A91EDF96F8CC0E0"
+					item: {
+						Count: 1
+						id: "gtceu:flint_hoe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Starting Tools"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1CA9E2C8ECA8A9DD"]
+			description: ["Since you will need to vary the kind of foods you eat, start making a simple farm with some foods you have found."]
+			icon: "minecraft:wheat_seeds"
+			id: "6EA8C578550BA1B9"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "4A6A98CC1A3FCF27"
+				item: { Count: 8, id: "minecraft:stick" }
+				type: "item"
+			}]
+			title: "Farming Time"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1CA9E2C8ECA8A9DD"]
+			description: ["The GregTech Flint Sword comes with Fire Aspect naturally. Killing animals with it will drop their cooked meat."]
+			id: "3D3DD6D773B793CE"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:pig"
+				id: "32BFC433D44832C5"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Cooking Your Food"
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1CA9E2C8ECA8A9DD"]
+			description: ["Since you are probably in an underground hut, might as well expand it a bit and gather some Cobblestone."]
+			id: "463AF741EB24895D"
+			tasks: [{
+				count: 64L
+				id: "6A8C26191DE35C1B"
+				item: { Count: 256, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			title: "Mining Time"
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1CA9E2C8ECA8A9DD"]
+			description: ["Finding Sheep (or a village if you are lucky) should be your priority. 6 Wool should be enough to craft your first bed. Note, you do need 6 of the same color wool."]
+			icon: "minecraft:white_wool"
+			id: "4AD15856008178A1"
+			tasks: [{
+				count: 6L
+				id: "78FBC0A3CE82BADD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:wool"
+					}
+				}
+				type: "item"
+			}]
+			title: "Getting Sleepy"
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["463AF741EB24895D"]
+			description: ["Since you won't be able to make Charcoal right now, you'll have to fuel this with wood (or coal if you found some)."]
+			id: "791493D36D7713DD"
+			tasks: [{
+				id: "2F7D21D5596F655F"
+				item: "minecraft:furnace"
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "Smelting Time"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["791493D36D7713DD"]
+			description: ["The Soft Mallet is used in some early game crafting recipes as well as to stop machines from running. We will need one to craft a bed."]
+			icon: {
+				Count: 1
+				id: "gtceu:wood_mallet"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 127
+					}
+					HideFlags: 2
+				}
+			}
+			id: "3B8E20C63DA3ED7E"
+			tasks: [{
+				id: "19D4DF4E153A3259"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mallets"
+					}
+				}
+				type: "item"
+			}]
+			title: "Hammer Time"
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"3B8E20C63DA3ED7E"
+				"4AD15856008178A1"
+			]
+			description: ["Finally you can escape the night and get a goodnights rest. You've finished the tutorial. Good luck as you begin to progress the ages of technology to come."]
+			icon: "minecraft:red_bed"
+			id: "243BF59EB47319B3"
+			tasks: [{
+				id: "77E7AB8D940ACD22"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				type: "item"
+			}]
+			title: "Goodbye Darkness"
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["243BF59EB47319B3"]
+			description: ["If you haven't found any Rubber Trees or Sugarcane yet, you will want to go get some to craft the Lunchbag. Start planting both of these to build up a supply as you will need them both in the Bronze Age."]
+			id: "3AE62F32D77A285E"
+			tasks: [{
+				id: "31DBF2FC0CB5822B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "solonion:lunchbag"
+				}
+				type: "item"
+			}]
+			title: "Yummy Food"
+			x: 9.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3AE62F32D77A285E"]
+			id: "73BF3EC357A0322B"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				count: 128L
+				id: "48C18DCDC79EC264"
+				item: { Count: 128, id: "minecraft:sand" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3AE62F32D77A285E"]
+			id: "3C65625922C96A87"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				count: 128L
+				id: "4694750C33BCEAE6"
+				item: { Count: 128, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3AE62F32D77A285E"]
+			id: "1BC8C1093CE64099"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				count: 25L
+				id: "4A51A8152176E3DE"
+				item: { Count: 25, id: "minecraft:stone" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1BC8C1093CE64099"]
+			icon: {
+				Count: 1
+				id: "gtceu:flint_mortar"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 63
+					}
+					HideFlags: 2
+				}
+			}
+			id: "2CA08778DD1F1B73"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "3FB29E26549DBC9B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mortars"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"3C65625922C96A87"
+				"2CA08778DD1F1B73"
+			]
+			id: "138B26DA6713DB51"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "3C20D8B3345D227E"
+				item: "ceramicbucket:ceramic_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["138B26DA6713DB51"]
+			id: "24B776F5E491AE9C"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				count: 12L
+				id: "2491FB9EB2EE3709"
+				item: { Count: 12, id: "minecraft:paper" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"3C65625922C96A87"
+				"73BF3EC357A0322B"
+			]
+			id: "25F59FBCE4119A7C"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "21C92735A9DE097E"
+				item: "gtceu:brick_wooden_form"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["25F59FBCE4119A7C"]
+			icon: "gtceu:coke_oven_brick"
+			id: "664DBE878CC8B0DB"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					count: 104L
+					id: "5756D78304D04322"
+					item: { Count: 104, id: "gtceu:compressed_coke_clay" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 104L
+					id: "0342E9199F62B6AC"
+					item: { Count: 104, id: "gtceu:coke_oven_brick" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["664DBE878CC8B0DB"]
+			icon: "gtceu:coke_oven"
+			id: "6361716C263B1EA9"
+			tasks: [
+				{
+					count: 26L
+					id: "6A113860535C04C0"
+					item: { Count: 26, id: "gtceu:coke_oven_bricks" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "75004F15FF29B28A"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6361716C263B1EA9"]
+			id: "3CD409239B4FC5A2"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "5B9C9A7CBE4F3916"
+				title: "Creosote"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6361716C263B1EA9"]
+			id: "74503EA966F64181"
+			tasks: [{
+				count: 4L
+				id: "1187FF29895F05C9"
+				item: { Count: 4, id: "minecraft:charcoal" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["74503EA966F64181"]
+			id: "6D0EBDEC70F4B83C"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "370D1869A4B4AD13"
+				title: "Time to Start Mining"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6D0EBDEC70F4B83C"]
+			id: "46E02BD41BD08035"
+			tasks: [{
+				id: "5B4B507A32B662B5"
+				item: {
+					Count: 1
+					id: "gtceu:iron_pickaxe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 255
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 19.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["46E02BD41BD08035"]
+			id: "234BB2C729CE6E17"
+			tasks: [{
+				count: 48L
+				id: "573F0E23D34D9FFD"
+				item: { Count: 64, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["46E02BD41BD08035"]
+			id: "77F3235E5CD3992E"
+			tasks: [{
+				count: 16L
+				id: "3F9009DBD582857A"
+				item: { Count: 16, id: "gtceu:tin_ingot" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"77F3235E5CD3992E"
+				"234BB2C729CE6E17"
+			]
+			icon: "gtceu:bronze_dust"
+			id: "7680C88D874084A1"
+			tasks: [
+				{
+					count: 32L
+					id: "3329D92DC6BE9DFF"
+					item: { Count: 32, id: "gtceu:bronze_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7DAD9D1D1C8FE36F"
+					item: { Count: 32, id: "gtceu:bronze_ingot" }
+					type: "item"
+				}
+			]
+			x: 25.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["46E02BD41BD08035"]
+			id: "2F82C1389C6BE013"
+			tasks: [{
+				count: 72L
+				id: "0DEF0474FFD8B18A"
+				item: { Count: 72, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 19.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F82C1389C6BE013"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "6CA6470811CE7701"
+			tasks: [
+				{
+					id: "14328260C24E726E"
+					item: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26C1DCED2F568CFC"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CB5E240B59DB4ED"
+					item: {
+						Count: 1
+						id: "gtceu:iron_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49C84498E5B30D10"
+					item: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "726733210BC285B1"
+					item: {
+						Count: 1
+						id: "gtceu:iron_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "329607F8C53487C0"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "14C1698562FD2E69"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "68B03C98A5BD8950"
+				item: "craftingstation:crafting_station"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "5EA225D239798DDF"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "5242857347F05A3E"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			x: 20.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "5E425A49CF869449"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "2FA070488D0645C8"
+				title: "drawer..."
+				type: "checkmark"
+			}]
+			x: 22.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "0EF6793943CCCEF2"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "092215D684227C0A"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			x: 23.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"0EF6793943CCCEF2"
+				"5E425A49CF869449"
+				"5EA225D239798DDF"
+			]
+			id: "062204D4B9EE29FC"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "24C438914FC3A446"
+				item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["062204D4B9EE29FC"]
+			id: "0FD2C896173A1457"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "2044904203986E52"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			x: 23.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "03C63419E880B4CB"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "0650DB9D868B179C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 9
+						}
+					}
+					id: "solonion:lunchbox"
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "0D9F87BDADD67709"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "63483D191664CE01"
+				item: {
+					Count: 1
+					id: "gtceu:iron_scythe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 2
+							AoELayer: 2
+							AoERow: 2
+							MaxAoEColumn: 2
+							MaxAoELayer: 2
+							MaxAoERow: 2
+						}
+						GT.Tool: {
+							AttackDamage: 7.0f
+							AttackSpeed: -3.0f
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 767
+							ToolSpeed: 6.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "74C1E022D9C48584"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "22D240A9BD215C75"
+				item: {
+					Count: 1
+					id: "minecraft:shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "23DD24A38841D883"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "1ECF3B752E7FB7C5"
+				item: {
+					Count: 1
+					id: "gtceu:iron_butchery_knife"
+					tag: {
+						DisallowContainerItem: 0b
+						Enchantments: [{
+							id: "minecraft:looting"
+							lvl: 3s
+						}]
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 3.5f
+							AttackSpeed: -1.3f
+							Damage: 0
+							MaxDamage: 255
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CA6470811CE7701"]
+			id: "69B2F0BF119F1853"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				count: 64L
+				id: "4B214055B6FACA34"
+				item: { Count: 64, id: "pamhc2crops:cottonitem" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["69B2F0BF119F1853"]
+			icon: "comforts:sleeping_bag_blue"
+			id: "392423EF88809944"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "4DB63A9607908DA8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "comforts:sleeping_bags"
+					}
+				}
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69B2F0BF119F1853"]
+			id: "768E673D72CB4677"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "5D776CEABC9E03B3"
+				item: "sophisticatedbackpacks:copper_backpack"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6CA6470811CE7701"
+				"7680C88D874084A1"
+			]
+			id: "207F9053669C4342"
+			tasks: [{
+				id: "0CFC9772026FBC73"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 25.0d
+			y: -2.0d
+		}
+	]
+	title: "Tier 0 - Stone Age"
+}
