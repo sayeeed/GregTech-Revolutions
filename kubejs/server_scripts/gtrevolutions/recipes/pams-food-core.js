@@ -139,6 +139,7 @@ ServerEvents.recipes((event) => {
     ]);
     // remove all forge/cheese for just Pam cheese
     event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:cheese" }, "#forge:cheese", "pamhc2foodcore:cheeseitem");
+    event.replaceInput({ mod: "pamhc2foodextended", input: "#forge:cheese" }, "#forge:cheese", "pamhc2foodcore:cheeseitem");
     // Stock
     event.remove({ output: "pamhc2foodcore:stockitem" });
     event.shapeless("pamhc2foodcore:stockitem", [
@@ -147,6 +148,7 @@ ServerEvents.recipes((event) => {
     ]);
     // remove all forge/dough for just Pam dough
     event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:dough" }, "#forge:dough", "pamhc2foodcore:doughitem");
+    event.replaceInput({ mod: "pamhc2foodextended", input: "#forge:dough" }, "#forge:dough", "pamhc2foodcore:doughitem");
     // Cocoa Power
     event.shapeless("pamhc2foodcore:cocoapowderitem", [
         "#forge:tools/mortars",
@@ -160,6 +162,7 @@ ServerEvents.recipes((event) => {
         .EUt(2);
     // remove all forge/flour for just Pam flour
     event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:flour" }, "#forge:flour", "pamhc2foodcore:flouritem");
+    event.replaceInput({ mod: "pamhc2foodextended", input: "#forge:flour" }, "#forge:flour", "pamhc2foodcore:flouritem");
     //event.replaceInput({ mod: "pamhc2foodcore", input: "#forge:egg" }, "#forge:egg", "minecraft:egg");
     // Batter
     event.remove({ output: "pamhc2foodcore:batteritem" });
