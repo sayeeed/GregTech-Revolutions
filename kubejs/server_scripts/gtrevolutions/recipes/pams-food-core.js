@@ -218,6 +218,7 @@ ServerEvents.recipes((event) => {
     ]);
     // Replace all Pam's salt for GregTech salt
     event.replaceInput({ mod: "pamhc2foodcore", input: "pamhc2foodcore:saltitem" }, "pamhc2foodcore:saltitem", "gtceu:salt_dust");
+    event.replaceInput({ mod: "pamhc2foodextended", input: "pamhc2foodcore:saltitem" }, "pamhc2foodcore:saltitem", "gtceu:salt_dust");
     // Soft Pretzel
     event.remove({ output: "pamhc2foodcore:softpretzelitem" });
     event.shapeless("pamhc2foodcore:softpretzelitem", [
@@ -246,5 +247,33 @@ ServerEvents.recipes((event) => {
         "minecraft:sugar",
         "minecraft:egg",
         "#forge:water"
+    ]);
+    // Fried Chicken
+    event.remove({ output: "pamhc2foodcore:friedchickenitem" });
+    event.shapeless("pamhc2foodcore:friedchickenitem", [
+        "pamhc2foodcore:potitem",
+        "pamhc2foodcore:flouritem",
+        "#forge:rawchicken",
+        "pamhc2crops:spiceleafitem",
+        "pamhc2foodextended:saltandpepperitem",
+        "#forge:cookingoil"
+    ]);
+    // Pot Roast
+    event.remove({ output: "pamhc2foodcore:potroastitem" });
+    event.shapeless("pamhc2foodcore:potroastitem", [
+        "pamhc2foodcore:potitem",
+        "#forge:rawbeef",
+        "minecraft:potato",
+        "minecraft:carrot",
+        "pamhc2foodcore:stockitem"
+    ]);
+    // Fresh Water/Milk
+    event.remove({ output: "pamhc2foodcore:freshwateritem" });
+    event.remove({ output: "pamhc2foodcore:freshmilkitem" });
+    event.shapeless(`4x pamhc2foodcore:freshwateritem`, [
+        "minecraft:water_bucket"
+    ]);
+    event.shapeless(`4x pamhc2foodcore:freshmilkitem`, [
+        "minecraft:milk_bucket"
     ]);
 });
