@@ -12,9 +12,9 @@
 	quests: [
 		{
 			description: [
-				"Welcome to GregTech: Revolutions, a GTM based modpack about building factories and solving logistical problems with a GTNH inspired difficulty setting."
+				"Welcome to &l&6GregTech: Revolutions&r&r, a &bGTM&r based modpack about building factories and solving logistical problems with a GTNH inspired difficulty setting."
 				""
-				"For starters, I recommend you complete this quest and immediately look for some wood, gravel, food, and wool to help you survive your first night. The world around you does not like you, but it will be your job to control it before long."
+				"For starters, I recommend you complete this quest and immediately look for some &cwood&r, &9gravel&r, &2food&r, and &dwool&r to help you survive your first night. The world around you does not like you, but it will be your job to control it before long."
 				""
 				"After you have gotten situated, it is time to settle into your new world (or life). The beginning few quests will go over some of the main mods and mechanics in the pack."
 			]
@@ -284,7 +284,11 @@
 		}
 		{
 			dependencies: ["1CA9E2C8ECA8A9DD"]
-			description: ["Since you will need to vary the kind of foods you eat, start making a simple farm with some foods you have found."]
+			description: [
+				"Since you will need to vary the kind of foods you eat, start making a simple farm with some foods you have found."
+				""
+				"As you explore, you'll find gardens that you can break to find food to plant. You might also find some trees that have fruit growing on them that you can plant for more."
+			]
 			icon: "minecraft:wheat_seeds"
 			id: "6EA8C578550BA1B9"
 			shape: "rsquare"
@@ -296,7 +300,7 @@
 				item: { Count: 8, id: "minecraft:stick" }
 				type: "item"
 			}]
-			title: "Farming Time"
+			title: "Food Galore"
 			x: 13.5d
 			y: 2.5d
 		}
@@ -326,7 +330,7 @@
 				item: { Count: 256, id: "minecraft:cobblestone" }
 				type: "item"
 			}]
-			title: "Mining Time"
+			title: "Your First Stack of Cobblestone"
 			x: 9.0d
 			y: 4.0d
 		}
@@ -353,15 +357,23 @@
 		}
 		{
 			dependencies: ["463AF741EB24895D"]
-			description: ["Since you won't be able to make Charcoal right now, you'll have to fuel this with wood (or coal if you found some)."]
+			description: ["Furnaces work a little differently in GT:R. For most items, you will be able to smelt them like normal. Some items, mainly smelting ingots, require a much hotter tempurature than the vanilla furnace can handle. To smelt any Iron or Copper you find, you will need to smelt it in a vanilla Blast Furnace instead. Don't worry, the Blast Furnace does not require iron to craft."]
+			icon: "minecraft:furnace"
 			id: "791493D36D7713DD"
-			tasks: [{
-				id: "2F7D21D5596F655F"
-				item: "minecraft:furnace"
-				only_from_crafting: true
-				type: "item"
-			}]
-			title: "Smelting Time"
+			tasks: [
+				{
+					id: "2F7D21D5596F655F"
+					item: "minecraft:furnace"
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					id: "4CE167E5E2D8935B"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+			]
+			title: "Smelting and Blasting"
 			x: 6.0d
 			y: 4.0d
 		}
@@ -423,27 +435,46 @@
 		{
 			dependencies: ["243BF59EB47319B3"]
 			description: ["If you haven't found any Rubber Trees or Sugarcane yet, you will want to go get some to craft the Lunchbag. Start planting both of these to build up a supply as you will need them both in the Bronze Age."]
-			id: "3AE62F32D77A285E"
-			tasks: [{
-				id: "31DBF2FC0CB5822B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 5
-						}
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 5
 					}
-					id: "solonion:lunchbag"
 				}
-				type: "item"
-			}]
+				id: "solonion:lunchbag"
+			}
+			id: "3AE62F32D77A285E"
+			tasks: [
+				{
+					id: "5457A97EF0993EAF"
+					title: "Lunch Bag"
+					type: "checkmark"
+				}
+				{
+					id: "4223CAE7C7CE5E2E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "solonion:lunchbag"
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "Yummy Food"
 			x: 9.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3AE62F32D77A285E"]
+			description: ["Sand is used to make coke bricks which you will need a lot of to make your first Coke Oven."]
 			id: "73BF3EC357A0322B"
 			shape: "rsquare"
 			size: 1.0d
@@ -453,11 +484,13 @@
 				item: { Count: 128, id: "minecraft:sand" }
 				type: "item"
 			}]
+			title: "Sand, Lots of Sand"
 			x: 11.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3AE62F32D77A285E"]
+			description: ["Clay is a very important early game resource as it will be used to make bricks, your first Coke Oven, and the Primitive Blast Furnace. You'll want to collect a lot of this, 2 stacks is all this quest is asking you for but you might want to go ahead and get 1,000."]
 			id: "3C65625922C96A87"
 			shape: "rsquare"
 			size: 1.0d
@@ -467,11 +500,13 @@
 				item: { Count: 128, id: "minecraft:clay_ball" }
 				type: "item"
 			}]
+			title: "Clay, Lots of Clay"
 			x: 9.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["3AE62F32D77A285E"]
+			description: ["You'll need a littel stone in order to make a Mortar and Pestle to start manually macerating items."]
 			id: "1BC8C1093CE64099"
 			shape: "rsquare"
 			size: 1.0d
@@ -481,11 +516,17 @@
 				item: { Count: 25, id: "minecraft:stone" }
 				type: "item"
 			}]
+			title: "The Start of Processing"
 			x: 7.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["1BC8C1093CE64099"]
+			description: [
+				"The Mortar and Pestle acts as a manual macerator. One of the main uses for you now is that you'll be able to grind Gravel into Flint at a 1:1 ratio."
+				""
+				"You won't need it immediately, but they will be very useful. You might want to make a few of these."
+			]
 			icon: {
 				Count: 1
 				id: "gtceu:flint_mortar"
@@ -513,6 +554,7 @@
 				}
 				type: "item"
 			}]
+			title: "Manual Grinding"
 			x: 5.0d
 			y: 10.0d
 		}
@@ -521,19 +563,43 @@
 				"3C65625922C96A87"
 				"2CA08778DD1F1B73"
 			]
+			description: [
+				"If you're lucky, you might have found a normal iron bucket by now, but if not, you can make a &cCeramic Bucket&r. They act just like normal iron buckets, but if the tempurature of the liquid is too hot, it will melt and destory the bucket after being used. They will work perfectly fine for picking up water which is their main use in the early game."
+				""
+				"Start by forming clay into compressed clay and smelting the unfired clay bucket in a furnace."
+			]
+			icon: "ceramicbucket:ceramic_bucket"
 			id: "138B26DA6713DB51"
 			shape: "rsquare"
 			size: 1.0d
-			tasks: [{
-				id: "3C20D8B3345D227E"
-				item: "ceramicbucket:ceramic_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 3L
+					id: "6565F3990BF4539A"
+					item: { Count: 3, id: "gtceu:compressed_clay" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E7FC6FD289264EC"
+					item: "ceramicbucket:unfired_clay_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4A63860EF3B24EE1"
+					item: "ceramicbucket:ceramic_bucket"
+					type: "item"
+				}
+			]
+			title: "Buckets!"
 			x: 5.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["138B26DA6713DB51"]
+			description: ["Paper is gregified here. You will need to grind Sugar Cane into Chad, which can be combined with water and a Soft Mallet to make paper."]
+			icon: "minecraft:paper"
 			id: "24B776F5E491AE9C"
 			shape: "rsquare"
 			size: 1.0d
@@ -543,6 +609,7 @@
 				item: { Count: 12, id: "minecraft:paper" }
 				type: "item"
 			}]
+			title: "Writing History"
 			x: 7.0d
 			y: 12.0d
 		}
@@ -551,6 +618,7 @@
 				"3C65625922C96A87"
 				"73BF3EC357A0322B"
 			]
+			description: ["The wooden form will be able to mold materials into a brick, useful for making compressed clay and firebricks."]
 			id: "25F59FBCE4119A7C"
 			shape: "rsquare"
 			size: 1.0d
@@ -559,6 +627,7 @@
 				item: "gtceu:brick_wooden_form"
 				type: "item"
 			}]
+			title: "Making Bricks"
 			x: 11.0d
 			y: 12.0d
 		}
