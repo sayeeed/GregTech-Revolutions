@@ -3,6 +3,17 @@
  * Miscellaneous Recipe Changes
  * 
  */
+// removes item from EMI and removes the recipe, effectively deleting the item from survival worlds
+let yeet = (item) => {
+  ServerEvents.recipes(event => {
+    event.remove({ output: item });
+  });
+  ServerEvents.tags('item', event => {
+    event.add('forge:viewers/hidden_from_recipe', item);
+    event.add('c:hidden_from_recipe_viewers', item);
+  });
+}
+
 ServerEvents.recipes((event) => {
     // Crafting Table
     event.remove({ output: "minecraft:crafting_table", type: "minecraft:crafting_shaped" });
@@ -138,4 +149,9 @@ ServerEvents.recipes((event) => {
     event.shapeless("minecraft:flint", [
       `3x minecraft:gravel`
     ]);
+
+    event.remove({ output: "ceramicbucket:unfired_clay_bucket", type: "minecraft:crafting_shaped" });
+    event.shaped("ceramicbucket:unfired_clay_bucket", [ "C C", " C " ], {
+      C: "gtceu:compressed_clay"
+    });
 });
