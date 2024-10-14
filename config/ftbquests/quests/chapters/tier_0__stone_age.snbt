@@ -2,7 +2,6 @@
 	default_hide_dependency_lines: false
 	default_min_width: 400
 	default_quest_shape: "square"
-	default_quest_size: 2.0d
 	filename: "tier_0__stone_age"
 	group: ""
 	icon: "minecraft:stone"
@@ -37,7 +36,7 @@
 			}
 			id: "32026EE705DD0326"
 			shape: "gear"
-			size: 2.75d
+			size: 1.25d
 			subtitle: "Your First Night"
 			tasks: [{
 				id: "165917028D9C6F07"
@@ -75,8 +74,8 @@
 				title: "Mods Overview"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: -2.0d
+			x: 4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["32026EE705DD0326"]
@@ -95,8 +94,8 @@
 				title: "Development"
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: -2.5d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["32026EE705DD0326"]
@@ -137,7 +136,7 @@
 				}
 			]
 			title: "This Looks Familiar"
-			x: 9.0d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -150,7 +149,7 @@
 				type: "item"
 			}]
 			title: "Crafting Time"
-			x: 12.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -279,8 +278,8 @@
 				}
 			]
 			title: "Starting Tools"
-			x: 12.0d
-			y: 4.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1CA9E2C8ECA8A9DD"]
@@ -301,8 +300,8 @@
 				type: "item"
 			}]
 			title: "Food Galore"
-			x: 13.5d
-			y: 2.5d
+			x: 10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1CA9E2C8ECA8A9DD"]
@@ -317,8 +316,8 @@
 				value: 5L
 			}]
 			title: "Cooking Your Food"
-			x: 10.5d
-			y: 2.5d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1CA9E2C8ECA8A9DD"]
@@ -331,8 +330,8 @@
 				type: "item"
 			}]
 			title: "Your First Stack of Cobblestone"
-			x: 9.0d
-			y: 4.0d
+			x: 11.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1CA9E2C8ECA8A9DD"]
@@ -352,8 +351,8 @@
 				type: "item"
 			}]
 			title: "Getting Sleepy"
-			x: 12.0d
-			y: 7.0d
+			x: 10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["463AF741EB24895D"]
@@ -374,8 +373,8 @@
 				}
 			]
 			title: "Smelting and Blasting"
-			x: 6.0d
-			y: 4.0d
+			x: 11.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["791493D36D7713DD"]
@@ -406,8 +405,8 @@
 				type: "item"
 			}]
 			title: "Hammer Time"
-			x: 6.0d
-			y: 7.0d
+			x: 11.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -429,8 +428,8 @@
 				type: "item"
 			}]
 			title: "Goodbye Darkness"
-			x: 9.0d
-			y: 7.0d
+			x: 10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["243BF59EB47319B3"]
@@ -469,8 +468,8 @@
 				}
 			]
 			title: "Yummy Food"
-			x: 9.0d
-			y: 10.0d
+			x: 8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3AE62F32D77A285E"]
@@ -485,8 +484,8 @@
 				type: "item"
 			}]
 			title: "Sand, Lots of Sand"
-			x: 11.0d
-			y: 10.0d
+			x: 8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3AE62F32D77A285E"]
@@ -501,8 +500,8 @@
 				type: "item"
 			}]
 			title: "Clay, Lots of Clay"
-			x: 9.0d
-			y: 12.0d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3AE62F32D77A285E"]
@@ -517,8 +516,8 @@
 				type: "item"
 			}]
 			title: "The Start of Processing"
-			x: 7.0d
-			y: 10.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1BC8C1093CE64099"]
@@ -555,8 +554,8 @@
 				type: "item"
 			}]
 			title: "Manual Grinding"
-			x: 5.0d
-			y: 10.0d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -593,8 +592,8 @@
 				}
 			]
 			title: "Buckets!"
-			x: 5.0d
-			y: 12.0d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["138B26DA6713DB51"]
@@ -610,8 +609,8 @@
 				type: "item"
 			}]
 			title: "Writing History"
-			x: 7.0d
-			y: 12.0d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -628,8 +627,8 @@
 				type: "item"
 			}]
 			title: "Making Bricks"
-			x: 11.0d
-			y: 12.0d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["25F59FBCE4119A7C"]
@@ -652,8 +651,8 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
-			y: 12.0d
+			x: 7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["664DBE878CC8B0DB"]
@@ -673,8 +672,8 @@
 					type: "item"
 				}
 			]
-			x: 16.0d
-			y: 12.0d
+			x: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6361716C263B1EA9"]
@@ -686,8 +685,8 @@
 				title: "Creosote"
 				type: "checkmark"
 			}]
-			x: 16.0d
-			y: 14.0d
+			x: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6361716C263B1EA9"]
@@ -698,8 +697,8 @@
 				item: { Count: 4, id: "minecraft:charcoal" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 9.0d
+			x: 9.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["74503EA966F64181"]
@@ -711,8 +710,8 @@
 				title: "Time to Start Mining"
 				type: "checkmark"
 			}]
-			x: 16.0d
-			y: 6.0d
+			x: 10.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6D0EBDEC70F4B83C"]
@@ -736,8 +735,8 @@
 				}
 				type: "item"
 			}]
-			x: 19.0d
-			y: 6.0d
+			x: 12.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["46E02BD41BD08035"]
@@ -748,8 +747,8 @@
 				item: { Count: 64, id: "minecraft:copper_ingot" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 7.0d
+			x: 13.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["46E02BD41BD08035"]
@@ -760,8 +759,8 @@
 				item: { Count: 16, id: "gtceu:tin_ingot" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 5.0d
+			x: 13.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -785,8 +784,8 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
-			y: 6.0d
+			x: 15.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["46E02BD41BD08035"]
@@ -797,8 +796,8 @@
 				item: { Count: 72, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: 2.0d
+			x: 12.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2F82C1389C6BE013"]
@@ -932,8 +931,8 @@
 					type: "item"
 				}
 			]
-			x: 19.0d
-			y: -2.0d
+			x: 16.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -945,8 +944,8 @@
 				item: "craftingstation:crafting_station"
 				type: "item"
 			}]
-			x: 19.0d
-			y: -5.5d
+			x: 17.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -958,8 +957,8 @@
 				item: "minecraft:barrel"
 				type: "item"
 			}]
-			x: 20.5d
-			y: -5.5d
+			x: 18.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -971,8 +970,8 @@
 				title: "drawer..."
 				type: "checkmark"
 			}]
-			x: 22.0d
-			y: -5.5d
+			x: 19.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -984,8 +983,8 @@
 				item: "minecraft:chest"
 				type: "item"
 			}]
-			x: 23.5d
-			y: -5.5d
+			x: 20.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1001,8 +1000,8 @@
 				item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
 				type: "item"
 			}]
-			x: 22.0d
-			y: -7.0d
+			x: 19.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["062204D4B9EE29FC"]
@@ -1014,8 +1013,8 @@
 				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 				type: "item"
 			}]
-			x: 23.5d
-			y: -7.0d
+			x: 20.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -1036,8 +1035,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -5.5d
+			x: 16.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -1072,8 +1071,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.0d
-			y: -5.5d
+			x: 15.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -1092,7 +1091,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -1123,7 +1122,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6CA6470811CE7701"]
@@ -1137,7 +1136,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["69B2F0BF119F1853"]
@@ -1156,8 +1155,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 0.0d
+			x: 14.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["69B2F0BF119F1853"]
@@ -1169,8 +1168,8 @@
 				item: "sophisticatedbackpacks:copper_backpack"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.5d
+			x: 14.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1183,8 +1182,8 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 25.0d
-			y: -2.0d
+			x: 16.5d
+			y: 7.0d
 		}
 	]
 	title: "Tier 0 - Stone Age"

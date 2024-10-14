@@ -1,7 +1,6 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
-	default_quest_size: 2.0d
 	filename: "tier_05__bronze_age"
 	group: ""
 	icon: "gtceu:bronze_ingot"
@@ -17,7 +16,7 @@
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.5d
 			y: 6.0d
 		}
 		{
@@ -44,7 +43,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0D96EE488C07861A"]
@@ -56,8 +55,8 @@
 				item: "minecraft:hopper"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.0d
+			x: 9.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4CC8639F7A24D10B"]
@@ -69,8 +68,8 @@
 				item: "gtceu:tin_small_item_pipe"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 4.0d
+			x: 10.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0D96EE488C07861A"]
@@ -80,7 +79,7 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.5d
 			y: 6.0d
 		}
 		{
@@ -93,8 +92,8 @@
 				item: "gtceu:hp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 4.0d
+			x: 12.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1C37FD527BA3AC3D"]
@@ -105,7 +104,7 @@
 				item: { Count: 16, id: "gtceu:red_alloy_ingot" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 15.5d
 			y: 6.0d
 		}
 		{
@@ -116,7 +115,7 @@
 				item: "minecraft:piston"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.5d
 			y: 6.0d
 		}
 		{
@@ -127,8 +126,8 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 3.0d
+			x: 18.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["79046086BDF8F876"]
@@ -140,8 +139,8 @@
 				item: "gtceu:hp_steam_macerator"
 				type: "item"
 			}]
-			x: 23.0d
-			y: 3.0d
+			x: 19.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6D1EE77618A877AE"]
@@ -151,7 +150,7 @@
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 21.5d
 			y: 6.0d
 		}
 		{
@@ -180,8 +179,8 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
-			y: 9.0d
+			x: 21.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0D10A4FD3630C0B5"]
@@ -193,7 +192,7 @@
 				item: "minecraft:anvil"
 				type: "item"
 			}]
-			x: 27.5d
+			x: 24.5d
 			y: 6.0d
 		}
 		{
@@ -204,8 +203,8 @@
 				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 30.0d
-			y: 6.0d
+			x: 24.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["061B59D1CEFC96B2"]
@@ -217,8 +216,8 @@
 				item: "gtceu:hp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 30.0d
-			y: 4.0d
+			x: 25.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0D10A4FD3630C0B5"]
@@ -230,8 +229,8 @@
 				item: "gtceu:hp_steam_compressor"
 				type: "item"
 			}]
-			x: 25.0d
-			y: 4.0d
+			x: 21.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["40510B11FFCB2AB3"]
@@ -242,8 +241,8 @@
 				item: { Count: 8, id: "gtceu:steel_ingot" }
 				type: "item"
 			}]
-			x: 25.0d
-			y: 12.0d
+			x: 21.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["52217CB03FF6F7B3"]
@@ -261,8 +260,8 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
-			y: 16.0d
+			x: 21.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["52217CB03FF6F7B3"]
@@ -280,8 +279,8 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: 12.0d
+			x: 19.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2686D3D758DFB579"]
@@ -291,8 +290,8 @@
 				id: "34CD856CFB5D18E6"
 				type: "dimension"
 			}]
-			x: 18.0d
-			y: 12.0d
+			x: 16.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1C37FD527BA3AC3D"]
@@ -305,8 +304,8 @@
 				item: { Count: 8, id: "minecraft:glass" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: 4.0d
+			x: 13.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6D1EE77618A877AE"]
@@ -316,8 +315,8 @@
 				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 9.0d
+			x: 18.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -333,8 +332,8 @@
 				item: { Count: 64, id: "gtceu:raw_sulfur" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 9.0d
+			x: 16.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["110D8A6062813950"]
@@ -345,8 +344,8 @@
 				item: { Count: 16, id: "gtceu:rubber_ingot" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 9.0d
+			x: 14.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7ED5CF786CB3FFBA"]
@@ -359,8 +358,8 @@
 				item: { Count: 8, id: "gtceu:rubber_plate" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 8.5d
+			x: 13.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7ED5CF786CB3FFBA"]
@@ -384,8 +383,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 9.5d
+			x: 13.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["420F7D2E48DB9F10"]
@@ -397,8 +396,8 @@
 				item: "gtceu:hp_steam_extractor"
 				type: "item"
 			}]
-			x: 23.0d
-			y: 9.0d
+			x: 19.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7ED5CF786CB3FFBA"]
@@ -409,8 +408,8 @@
 				item: { Count: 32, id: "gtceu:copper_single_wire" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 12.0d
+			x: 14.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["5F3FED15690085EC"]
@@ -423,8 +422,8 @@
 				item: { Count: 8, id: "gtceu:copper_single_cable" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: 12.0d
+			x: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["52217CB03FF6F7B3"]
@@ -437,8 +436,8 @@
 				item: { Count: 4, id: "gtceu:empty_mold" }
 				type: "item"
 			}]
-			x: 21.0d
-			y: 14.0d
+			x: 19.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -453,7 +452,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 14.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5F3FED15690085EC"]
@@ -464,8 +463,8 @@
 				item: { Count: 2, id: "gtceu:resistor" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 14.0d
+			x: 13.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5F3FED15690085EC"]
@@ -475,8 +474,8 @@
 				item: "gtceu:resin_circuit_board"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 14.0d
+			x: 14.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -490,8 +489,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 16.0d
+			x: 14.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5F3FED15690085EC"]
@@ -501,8 +500,8 @@
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 14.0d
+			x: 16.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["368C018C0FD1878A"]
@@ -515,8 +514,8 @@
 				item: { Count: 2, id: "gtceu:tin_rotor" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: 16.0d
+			x: 21.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -530,8 +529,8 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 16.0d
+			x: 16.0d
+			y: 14.0d
 		}
 	]
 	title: "Tier 0.5 - Bronze Age"
