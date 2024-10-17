@@ -1,4 +1,4 @@
-// priority: 1
+// priority: 5
 
 let add = (item) => {
     ServerEvents.tags('item', event => {
@@ -16,4 +16,5 @@ add("create:track_station");
 add("create:track_signal");
 add("create:track_observer");
 add("create:controls");
+add("create:electron_tube");
 add(/create:(.*)_seat/);
