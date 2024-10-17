@@ -18,18 +18,4 @@ ItemEvents.tooltip((event) => {
     ],
     Text.red("Disabled in this modpack!").bold(true)
   );
-
-  event.add("gtceu:greenhouse", Text.gray("Two green thumbs up!"));
-  event.add(
-    "gtceu:construction_core",
-    Text.gray("Offers cheaper recipes for building blocks!")
-  );
-  event.add(
-    "gtceu:construction_core",
-    Text.darkGray("Requires Construction Foam to operate.")
-  );
-
-  event.add("ae2:controller", Text.gray("Channels are §cdisabled§7."));
-
-  event.add("expatternprovider:fishbig", Text.gray("Congratulations! You won Minecraft."));
 });
