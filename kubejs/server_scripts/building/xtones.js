@@ -10,20 +10,6 @@ ServerEvents.recipes((event) => {
     .itemOutputs(`4x xtonesreworked:xtone_tile`)
     .EUt(2)
     .duration(20);
-  event.recipes.gtceu
-    .construction_core("xtonesreworked:xtone_tile")
-    .itemInputs("cobblestone", "stone")
-    .itemOutputs(`16x xtonesreworked:xtone_tile`)
-    .inputFluids("gtceu:construction_foam 100")
-    .EUt(8)
-    .duration(20);
-  event.recipes.gtceu
-    .construction_core("xtonesreworked:flat_lamp")
-    .itemInputs("xtonesreworked:xtone_tile", "glowstone")
-    .itemOutputs(`4x xtonesreworked:flat_lamp`)
-    .inputFluids("gtceu:construction_foam 100")
-    .EUt(8)
-    .duration(20);
 
   function createRecipe(input, material) {
     event.recipes.gtceu
@@ -31,13 +17,6 @@ ServerEvents.recipes((event) => {
       .itemInputs("xtonesreworked:xtone_tile", input)
       .itemOutputs(`4x xtonesreworked:${material}_block_0`)
       .EUt(2)
-      .duration(20);
-    event.recipes.gtceu
-      .construction_core(`construction_${material}`)
-      .itemInputs("xtonesreworked:xtone_tile", input)
-      .itemOutputs(`16x xtonesreworked:${material}_block_0`)
-      .inputFluids("gtceu:construction_foam 100")
-      .EUt(8)
       .duration(20);
     // And now, we stonecut.
     for (let i = 0; i < 16; i++) {
