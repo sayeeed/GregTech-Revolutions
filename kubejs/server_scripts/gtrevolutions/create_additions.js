@@ -7,6 +7,9 @@ let add = (item) => {
     });
 }
 
+add("create:andesite_casing");
+add("create:brass_casing");
+add("create:copper_casing");
 add("create:portable_fluid_interface");
 add("create:portable_storage_interface");
 add("create:track");

@@ -8,11 +8,32 @@ ServerEvents.recipes((event) => {
         L: "#forge:oak_logs"
     });
 
+    // Andesite Casing
+    event.shaped("create:andesite_casing", [ "SOS", "OLO", "SOS" ], {
+        S: "gtceu:steel_plate",
+        O: "create:andesite_alloy",
+        L: "#minecraft:logs"
+    });
+
+    // Copper Casing
+    event.shaped("create:copper_casing", [ "SOS", "OLO", "SOS" ], {
+        S: "gtceu:steel_plate",
+        O: "gtceu:copper_plate",
+        L: "#minecraft:logs"
+    });
+
+    // Brass Casing
+    event.shaped("create:brass_casing", [ "SOS", "OLO", "SOS" ], {
+        S: "gtceu:steel_plate",
+        O: "gtceu:brass_plate",
+        L: "#minecraft:logs"
+    });
+
     // Train Casing
     event.shaped("create:railway_casing", [ "SOS", "OLO", "SOS" ], {
         S: "gtceu:steel_plate",
         O: "gtceu:obsidian_plate",
-        L: "#minecraft:logs"
+        L: "create:brass_casing"
     });
 
     // Train Schedule
@@ -60,5 +81,17 @@ ServerEvents.recipes((event) => {
         I: "gtceu:iron_plate",
         P: "gtceu:gold_plate",
         G: "gtceu:gold_bolt"
+    });
+
+    // Portable Storage Interface
+    event.shaped("create:portable_storage_interface", [ "AAA", "PPP", "AAA" ], {
+        A: "create:andesite_casing",
+        P: "gtceu:tin_normal_item_pipe"
+    });
+
+    // Portable Fluid Interface
+    event.shaped("create:portable_fluid_interface", [ "AAA", "PPP", "AAA" ], {
+        A: "create:copper_casing",
+        P: "gtceu:steel_normal_fluid_pipe"
     });
 });
