@@ -13,3 +13,6 @@
 config/embeddium-fingerprint.json
 config/embeddium-options.json
 config/inventoryprofilesnext
+
+kubejs/*/jsconfig.json
+kubejs/config/probe-settings.json
